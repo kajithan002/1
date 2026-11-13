@@ -1,0 +1,17 @@
+Build WaThemer from an Android phone using GitHub Actions
+
+1. Open https://github.com/new in your phone browser and create a repository. A private repository is fine.
+2. In the new repository, choose Add file > Upload files.
+3. Upload wathemer-video-wallpaper-source.zip and commit it to the main branch.
+4. Choose Add file > Create new file.
+5. Set the filename to: .github/workflows/build.yml
+6. Paste the contents of wathemer-build.yml and commit it.
+7. Open the Actions tab. Open "Build WaThemer APK". If it has not started automatically, tap "Run workflow".
+8. Wait for the run to finish. Open the successful run, scroll to Artifacts, and download "wathemer-video-wallpaper-debug-apk".
+9. Extract the artifact ZIP on your phone. Install the APK.
+
+Notes:
+- GitHub Actions builds in GitHub's cloud; no PC is required.
+- Do not upload keystores, passwords, or signing secrets.
+- The debug APK uses a debug signing key and may not install as an update over a differently signed WaThemer. Back up settings before replacing an existing installation.
+- A successful build only confirms compilation; video rendering still needs testing in WhatsApp on the phone.
